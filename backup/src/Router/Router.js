@@ -6,7 +6,8 @@ import Contact from '../Sections/Contact'
 import Home from '../Sections/Home'
 import Aside from '../UI/Aside'
 import SocialMedia from '../UI/SocialMedia'
-
+import Footer from '../UI/Footer'
+import Copyright from '../UI/Copyright'
 
 const Router = () => {
     return (
@@ -20,6 +21,8 @@ const Router = () => {
                         <Route path="/contact" element={<Contact />} />
                         <Route path="/" element={<Home />} />
                     </Routes>
+                    <Footer />
+                    <Copyright />
                 </div>
                 <Aside />
             </BrowserRouter>

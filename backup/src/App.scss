@@ -87,7 +87,7 @@ body {
     #box-socialMedia {
         width: 80%;
         display: flex;
-        justify-content: end;    
+        justify-content: flex-end;    
         ul {
             margin: 0;
             padding: 0;
@@ -268,7 +268,7 @@ header {
                     margin: 10px 0 10px 0;
                 }
                 div {
-                    width: 100%;
+                    width: 75%;
                     display: flex;
                     justify-content: center;    
                     img {
@@ -336,3 +336,49 @@ header {
 }
 
 //Footer
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(66, 66, 66);
+    #footer-container {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        .section-of-footer {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            ul {
+                margin: 0;
+                padding: 0;
+                li {
+                    list-style: none;
+                    a {
+                        text-decoration: none;
+                        color: white;
+                    }
+                }
+            }
+            #box-socialMedia {
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    li {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Copyright
+#copy {
+    background-color: black;
+    p {
+        color: white;
+        margin: 0;
+        text-align: center;
+    }
+}

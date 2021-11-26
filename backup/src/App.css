@@ -68,7 +68,7 @@ body {
   #socialMedia #box-socialMedia {
     width: 80%;
     display: flex;
-    justify-content: end; }
+    justify-content: flex-end; }
     #socialMedia #box-socialMedia ul {
       margin: 0;
       padding: 0;
@@ -203,7 +203,7 @@ header {
           text-align: justify;
           margin: 10px 0 10px 0; }
         #aboutUs #aboutUs-box .aboutUs-box-double .aboutUs-item-container div {
-          width: 100%;
+          width: 75%;
           display: flex;
           justify-content: center; }
           #aboutUs #aboutUs-box .aboutUs-box-double .aboutUs-item-container div img {
@@ -249,3 +249,37 @@ header {
       align-items: center; }
       #team-container #audio-container #audio-box audio {
         margin: 15px 0 15px 0; }
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #424242; }
+  footer #footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%; }
+    footer #footer-container .section-of-footer {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      footer #footer-container .section-of-footer ul {
+        margin: 0;
+        padding: 0; }
+        footer #footer-container .section-of-footer ul li {
+          list-style: none; }
+          footer #footer-container .section-of-footer ul li a {
+            text-decoration: none;
+            color: white; }
+      footer #footer-container .section-of-footer #box-socialMedia ul {
+        display: flex;
+        flex-direction: row; }
+        footer #footer-container .section-of-footer #box-socialMedia ul li {
+          display: block; }
+
+#copy {
+  background-color: black; }
+  #copy p {
+    color: white;
+    margin: 0;
+    text-align: center; }

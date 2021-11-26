@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../UI/Header'
 import SectionTitle from '../UI/SectionTitle'
 import {LoremIpsum} from 'react-lorem-ipsum'
-import ImgExample from '../Img/example.png'
+import ImgExample from '../Img/slide-1.jpg'
 import Video from '../Videos/example.mp4'
 import Img1 from '../Img/about-us/1.jpg'
 import Img2 from '../Img/about-us/2.jpg'
@@ -46,6 +46,7 @@ const AboutUs = () => {
                             <img src={Img4} alt="a" /> 
                         </div>
                     </div>
+                    <hr />
                 </div>
             </div>
         </div>

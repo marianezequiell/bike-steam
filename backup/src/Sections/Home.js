@@ -1,6 +1,5 @@
 import React from 'react'
 import HeaderHome from '../UI/HeaderHome'
-import Footer from '../UI/Footer'
 import {LoremIpsum} from 'react-lorem-ipsum'
 import Slider from '../UI/Slider'
 import background from '../Img/background-1.jpg'
@@ -23,7 +22,6 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <Footer />
         </>
     )
 }
