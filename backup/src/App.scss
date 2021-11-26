@@ -1,0 +1,338 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Saira Condensed', sans-serif;
+    // background-color: black;
+}
+
+.title {
+    text-align: center;
+    color:rgb(0, 37, 68)
+}
+
+.menu-sin-desplegar {
+    transition: 5s;
+    #Aside {
+        display: none;
+    }
+}
+
+.menu-desplegado {
+    display: flex;
+    align-items: center;
+    transition: 5s;
+    #Page {
+        width: 75%;
+        // opacity: 5%;
+        margin-left: 5px;
+    }
+    #Aside {
+        width: 22%;
+        // background-color: black;
+        background-image: url("/src/Img/background-aside.jpg");
+        background-size: cover;
+        height: 75vh;
+        position: fixed;
+        top: 12.5%;
+        left: 75%;
+        border-radius: 15px;
+        #aside-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 100%;
+            div {
+                h1 {
+                    text-align: center;
+                    color: white
+                }
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    margin: 0;
+                    padding: 0;
+                    height: 100%;
+                    li {
+                        list-style: none;
+                        border-top: 1px solid grey;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        a {
+                            display: block;
+                            text-align: center;
+                            text-decoration: none;
+                            color: white;
+                        }
+                    }
+                }
+            }
+            #box-title-aside {
+                height: 40%;
+            }
+            #box-list-aside {
+                height: 60%;
+            }
+        }
+    }
+}
+
+#socialMedia {
+    background-color: rgb(66, 66, 66);
+    display: flex;
+    justify-content: center;
+    #box-socialMedia {
+        width: 80%;
+        display: flex;
+        justify-content: end;    
+        ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            max-width: 100%;
+            li {
+                list-style: none;
+                a {
+                    img {
+                        height: 30px;
+                        width: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+header {
+    display: flex;
+    // justify-content: space-around;
+    border-radius: 15px;
+    height: 75px;
+    #header-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        #menu-desp-container {
+            #menu-desp-box {
+                a {
+                    #menu-desp-icono {
+                        p {
+                            color:white
+                        }
+                    }
+                    text-decoration: none;
+                }
+            }
+        }    
+        #logo-container {
+            max-height: 100%;
+            #linkLogo {
+                height: 75px;
+                #logo-img {
+                    max-height: 100%;
+                    width: auto;
+                }
+            }
+        }
+    }
+}
+
+//Clases botón menú desplegable
+.cerrar-menu-desplegable {
+    div {
+        background-image: url("./Img/flecha-hacia-abajo.png");
+        background-repeat: no-repeat;
+        background-size: cover;    
+        background-position: 100% 100%;
+        width: 44px;
+        height: 44px;
+        transition: 0.1s;
+    }
+    p {
+        text-align: center;
+        margin: 0;
+        color: black;
+        text-decoration: none;
+    }
+}
+
+.abrir-menu-desplegable{
+    div {
+        background-image: url("./Img/menu.png");
+        background-repeat: no-repeat;
+        background-size: cover;    
+        transition: 0.1s;
+        width: 32px;
+        height: 32px;
+    }
+    p {
+        text-align: center;
+        margin: 0;
+        color: black;
+        text-decoration: none;
+    }
+}
+
+#backGround {
+    max-width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -50;
+}
+
+#sub-backGround {
+    display: flex;
+    justify-content: center;
+    #box-text-prn {
+        width: 75%;
+        #aaa {
+            width: 80%;
+            background-color: white;
+            opacity: 65%;
+            margin: 50px auto 50px auto;
+            padding: 20px;
+        }
+    }
+}
+
+//Section contact
+
+#contactSection {
+    display: flex;
+    justify-content: center;
+    #subContactSection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 90%;
+        #googleMaps {
+            iframe {
+                max-width: 100%;
+            }
+        }
+        #formContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 75%;
+            height: 75%;
+            h2 {
+                text-align: center;
+                height: 30%;
+            }
+            #form {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                width: 75%;
+                height: 70%;
+                input {
+                    width: 100%;
+                }
+                textarea {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+//About us
+#aboutUs {
+    display: flex;
+    justify-content: center;
+    #aboutUs-box {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        .aboutUs-box-double {
+            display: flex;
+            justify-content: space-evenly;
+            .aboutUs-item-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                width: 50%;
+                p {
+                    width: 90%;
+                    text-align: justify;
+                    margin: 10px 0 10px 0;
+                }
+                div {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;    
+                    img {
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0 20px 0;
+            .video-box {
+                width: 50%;
+                video {
+                    max-width: 100%;
+                }    
+            }
+        }
+        .aboutUs-box-one {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p {
+                width: 90%;
+                text-align: justify;
+                margin: 10px 0 10px 0;
+            }
+            .multiple-img {
+                display: flex;
+                justify-content: space-between;
+                img {
+                    width: 20%;
+                    opacity: 25%;
+                    transition: 0.5s;
+                }
+                img:hover {
+                    opacity: 100%;
+                    width: 40%;
+                    transition: 0.5s;
+                }
+            }
+        }
+    }
+}
+
+//Team
+#team-container {
+    display: flex;
+    justify-content: center;
+    #audio-container {
+        width: 75%;
+        p {
+            text-align: center;
+        }
+        #audio-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            audio {
+                margin: 15px 0 15px 0;
+            }
+        }    
+    }
+}
+
+//Footer
